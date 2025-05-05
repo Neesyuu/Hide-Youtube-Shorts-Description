@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        padding: 0;
+        margin: 0;
+      }
+      .mainContainer {
+        background-color: white;
+        padding: 15px 20px;
+        position: relative;
+      }
+      .imagePosition {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        opacity: 50%;
+        z-index: 5;
+      }
+      .imagePosition img {
+        width: 100%;
+        height: 100%;
+      }
+      .mainContent {
+        position: relative;
+        z-index: 10;
+      }
+      .titlePart {
+        margin-bottom: 15px;
+      }
+      button {
+        padding: 10px 15px;
+        margin: 5px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 14px;
+        border-radius: 5px;
+      }
+      .selected {
+        background-color: red;
+        /* background-color: #4caf50; */
+        color: white;
+        text-decoration: line-through;
+        border-color: white;
+      }
+      .unselected {
+        /* background-color: #f0f0f0; */
+        background-color: #ffe6eb;
+        color: black;
+      }
+      footer a {
+        text-decoration: none;
+        color: black;
+      }
+      footer a:hover {
+        color: red;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="imagePosition">
+        <img src="icons/icon128.png" alt="img" />
+      </div>
+      <div class="mainContent">
+        <div class="titlePart">
+          <span style="font-size: 14px; font-style: italic; margin-left: 5px"
+            >for</span
+          >
+          <h3 style="margin: 0">
+            <span style="color: red; font-size: 30px; margin: 0px 5px"
+              >Youtube</span
+            >
+            <span style="font-size: 20px">Shorts</span>
+          </h3>
+        </div>
+        <!-- <p>Enjoy the textless full screen youtube shorts.</p> -->
+        <!-- <strong>Wish I could do something to this</strong><br /><br /> -->
+        <button id="toggleMetadata" class="unselected">
+          Annoying Bottom Text
+        </button>
+        <button id="toggleMenu" class="unselected">
+          Annoying Side Buttons
+        </button>
+      </div>
+    </div>
+    <footer style="text-align: center; padding: 10px 0px">
+      Hey! how you doin?
+      <a
+        href="https://github.com/Neesyuu"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        >_-
+      </a>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
